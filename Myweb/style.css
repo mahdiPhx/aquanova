@@ -1,0 +1,313 @@
+/* Base Styles */
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 18px; /* Increased base font size */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #060606;
+    padding: 20px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin-top: -5px;
+}
+
+/* Sidebar */
+#menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: black;
+    z-index: 1000;
+}
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.4s ease-in-out;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+#sidebar ul li {
+    padding: 15px 0;
+}
+#sidebar ul li a:hover {
+    color: #6b17fb;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* 3D Model Section */
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+#model-container {
+    flex: 1;
+    max-width: 60%; /* Increased max-width */
+}
+model-viewer {
+    width: 100%;
+    height: 600px; /* Increased height */
+    border: 0px solid white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Description Section */
+#description {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Button */
+button {
+    background-color: #FF5722;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #FF8A50;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+#download-btn {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#footer-content {
+    padding: 10px;
+}
+footer h2 {
+    font-size: 24px;
+}
+footer p {
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Article */
+
+/* ... other CSS rules ... */
+
+/* Article Section */
+#article {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust as needed */
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+
+#article-content {
+    margin-top: 15px;
+}
+
+#article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#article h4 {
+    font-size: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#article p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+#article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 24px;
+    padding-left: 0;
+}
+
+#article li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Secound page  */
+
+/* ... other CSS rules ... */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+
+
+
+#team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keep centering the items */
+}
+
+.student-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Keep centering the grid items */
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.student-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    width: auto;
+    position: relative;
+    margin-left: -50px; /* New: Shift the entire student item to the left */
+}
+
+.student-card-wrapper {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.student-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.student-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+}
+
+.student-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.student-card p {
+    margin-top: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.student-description {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    min-width: 200px;
+    max-width: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: calc(220px + 20px - 10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .student-item {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Reset margin for stacked layout */
+    }
+    .student-card-wrapper {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .student-description {
+        width: 80%;
+        top: 0;
+        position: relative;
+        margin-top: -40px;
+        left: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+}

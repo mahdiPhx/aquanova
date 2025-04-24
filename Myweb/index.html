@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaNova</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AquaNova</h1>
+        <div id="menu-bar">
+            <div id="menu-button">&#9776;</div> <nav id="sidebar">
+                <ul>
+                    <li><a href="#content">Anasayfa</a></li>
+                    <li><a href="#description">Detaylar</a></li>
+                    <li><a href="#model">3D Model</a></li>
+                    <li><a href="#article">AquaNova</a>  </li>
+                    <li><a href="#footer-content">Bize ulaşın</a></li>
+                    <li><a href="students.html">Ekip</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-line"></div>
+    </header>
+
+    <main>
+        <section id="content">
+            <div id="model-container">
+                <model-viewer src="model.glb" alt="3D Component" auto-rotate camera-controls></model-viewer>
+            </div>
+            <div id="description">
+                <h2>Yeni Nəsil Su Təmizləmə Cihazı.</h2>
+                <p>AquaNova – dörd mərhələli unikal təmizləmə texnologiyası ilə, sizə sadəcə su deyil, həyat qaynağı təqdim edir. Hər bir damla, dəqiq mühəndislik və təbii zənginləşdirmə prosesi ilə hazırlanır.
+                </p>
+            </div>
+        </section>
+
+        <section id="model">
+           <!-- <h2>3D Model</h2>
+            <model-viewer src="model.glb" alt="3D Component" auto-rotate camera-controls style="width: 500%; height: 350px;"></model-viewer>-->
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        </section>
+
+        <section id="article">
+            <h2>AquaNova</h2>
+            <div id="article-content">
+                <h3> Yeni Nəsil Su Təmizləmə Cihazı.</h3>
+                <p>
+                    
+                    AquaNova– dörd mərhələli unikal təmizləmə texnologiyası ilə, sizə sadəcə su deyil,
+                    həyat qaynağı təqdim edir. Hər bir damla, dəqiq mühəndislik və təbii zənginləşdirmə prosesi ilə hazırlanır.
+                    <br>
+
+                 
+                </p>
+                <h4>Üstünlükler:</h4>
+                <ul>
+                    <li>Kimyəvi maddəsiz təmizləmə</li>
+                    <li>4 mərhələli tam sistemli təmizləmə texnologiyası</li>
+                    <li>Mineral kapsullar ilə zənginləşdirmə imkanı</li>
+                    <li>Şəffaf və izləniləbilən proseslər</li>
+                    <li>UV və ozon texnologiyası ilə maksimum gigiyena</li>
+                    <li>Estetik dizayn və istifadəyə rahatlıq</li>
+
+                    
+                </ul>
+               
+                    <h5>-İş Prinsipi:</h5>
+                    <ul>
+                        <li>1. Distillə Mərhələsi – “Distillation”:</li>       
+                    </ul> 
+                <p>   
+                    İlk mərhələdə su yüksək temperaturda qaynadılaraq buxara çevrilir. Bu proseslə suyun içindəki ağır metallar, duzlar və digər çirkləndiricilər ayrılır. Buxar yuxarı boru vasitəsilə növbəti mərhələyə ötürülür. Bu mərhələ həm də bakteriya və virusların 99%-ni məhv edir.
+
+                </p>
+                <ul>
+                    <li>2. UV Dezinfeksiya – “UV Clerical”:</li>
+
+                </ul>
+                <p>
+                    Soyudulmuş və kondensasiya olunmuş buxar bu mərhələdə UV LED texnologiyası ilə işıqlandırılır. Bu, qalan mikroorqanizmlərin tamamilə məhv olunmasını təmin edir. Şəffaf mavi işıq sayəsində prosesi vizual şəkildə izləmək mümkündür.
+
+                </p>
+                <ul>
+                    <li>3. Ozon və Oksigenlə Zənginləşdirmə – “Ozone 4 Oxygen”:</li>
+
+                </ul>
+                <p>
+                    Bu mərhələdə təmizlənmiş suya ozon və saf oksigen əlavə olunur. Bu proses həm dadı artırır, həm də suyu daha təravətli və enerji verici edir. İstəyə bağlı olaraq mineral kapsullar əlavə edilə bilər – beləliklə, su həm də sağlamlığa faydalı minerallarla zənginləşir. Bu mərhələdə suda hava kabarcıkları və turbulens effekti yaranır.
+
+                </p>
+                <ul>
+                    <li>4. Çıxış:</li>
+
+                </ul>
+                <p>
+                    Son mərhələdə sizə təklif olunan su – maksimum dərəcədə təmiz, dezinfeksiya olunmuş və minerallarla zənginləşdirilmiş sudur. Hazır su içmək və ya yemək hazırlamaq üçün tam uyğundur.
+
+                </p>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <h2>Bize ulaşın</h2>
+            <p>Email: Aryaaa@gmail.com | Sosyal medyada bizi takip edin.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
